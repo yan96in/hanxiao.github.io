@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <title lang="zh">欧金所 - 欧洲金融新闻门户</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="lib/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="lib/css/animate.css">
+    <link rel="stylesheet" href="lib/css/flag-icon.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.4.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="css/label.css">
+    <link rel="stylesheet" href="css/ribbons.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+
+<div class="panel panel-left panel-reveal">
+    <div class="content-block">
+        <p>Left panel content goes here</p>
+    </div>
+</div>
+
+<div class="panel panel-right panel-cover">
+    <div class="content-block">
+        <p>Right panel content goes here</p>
+    </div>
+</div>
+
+<div class="views">
+
+    <div class="view view-left navbar-through layout-white">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="center sliding animated flipInX"><img src="img/logo.png" width="120px"></div>
+            </div>
+        </div>
+        <div class="pages">
+            <div data-page="index-left" class="page">
+                <div class="page-content">
+                    <div class="content-block">
+                        <a href="#" class="button" onclick="loadAllData(dataUrl);"><i class="fa fa-refresh"></i> 更新全部</a>
+                    </div>
+                    <div class="content-block-title">特别推荐</div>
+                    <div class="content-block">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <!-- side-vertical -->
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:199px;height:285px"
+                             data-ad-client="ca-pub-5408889511302651"
+                             data-ad-slot="2142554729"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    <div class="content-block-title">按国家查看</div>
+                    <div class="list-block accordion-list">
+                        <ul id="menuItem">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="view view-main layout-white">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="center sliding" id="title-mainpage"></div>
+            </div>
+        </div>
+        <div class="pages navbar-through">
+            <div data-page="home-page" class="page navbar-fixed toolbar-fixed">
+                <div class="page-content main-homepage" id="storyLine">
+                </div>
+            </div>
+        </div>
+        <div class="toolbar">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- menu -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5408889511302651"
+                 data-ad-slot="3193812322"
+                 data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+</div>
+
+
+
+<script id="row-33-template" type="text/template7">
+    <div class="row no-gutter">
+        <div class="col-33">
+            {{story1}}
+        </div>
+        <div class="col-33">
+            {{story2}}
+        </div>
+        <div class="col-33">
+            {{story3}}
+        </div>
+    </div>
+</script>
+
+<script id="row-33-66-template" type="text/template7">
+    <div class="row no-gutter">
+        <div class="col-33">
+            {{story1}}
+        </div>
+        <div class="col-66">
+            {{story2}}
+        </div>
+    </div>
+</script>
+
+
+<script id="menu-template" type="text/template7">
+    {{#each items}}
+    <li class="accordion-item"><a href="#" class="item-content item-link" onclick="selectFlag(this)" data-flag="{{flagName}}">
+        <div class="item-inner">
+            <div class="item-title"><span class="flag-icon flag-icon-{{flagId}}"></span>  {{flagName}}</div>
+            {{#if hasUpdate}}<div class="item-after"><span class="badge bg-red">{{numNew}}</span></div>{{/if}}
+        </div></a>
+        <div class="accordion-item-content">
+            <div class="content-block">
+                <div class="list-block">
+                    <ul>
+                        {{#each stories}}
+                        <li class="item-content">
+                            <div class="item-inner small-menu-item">
+                                <div class="item-title">{{title}}</div>
+                                <div class="item-after">{{localTime}}</div>
+                            </div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</script>
+
+<script id="row-66-33-template" type="text/template7">
+    <div class="row no-gutter">
+        <div class="col-66">
+            {{story1}}
+        </div>
+        <div class="col-33">
+            {{story2}}
+        </div>
+    </div>
+</script>
+
+<script id="card-pic-66-template" type="text/template7">
+    <div class="card card-pic-66" id="card{{id}}" data-id="{{id}}" style="display: none;" onclick="showDetails(this)">
+        <div style="background-image:url({{mainImage}})" valign="bottom" class="card-header color-white">
+            {{#if isHot}}
+            <div class="ribbon"><span>热门</span></div>
+            {{/if}}
+            <div class="mylabel" style="background-color:#{{labelBGColor}} !important; color:#{{labelColor}} !important;"><span class="flag-icon flag-icon-{{flagId}}"></span> {{keyword}}</div>
+            <div class="mytitle giveMeTwoLines">{{title}}</div>
+        </div>
+        <div class="card-content">
+            <div class="card-content-inner giveMeThreeLines">
+                <p>{{summary}}</p>
+            </div>
+        </div>
+        <div class="card-footer giveMeOneLines">
+            <a href="#" class="link">{{localTime}}</a>
+            <a href="#" class="link">{{numSources}}个新闻源：
+                {{#each sourceArticles}}
+                &nbsp;&nbsp;
+                <img src="http://www.google.com/s2/favicons?domain_url={{sourceLink}}" width="16" height="16" />
+                {{/each}}
+            </a>
+        </div>
+    </div>
+</script>
+
+<script id="card-text-33-template" type="text/template7">
+    <div class="card card-text-33" id="card{{id}}" data-id="{{id}}" onclick="showDetails(this)">
+        <div class="card-header">
+            {{#if isHot}}
+            <div class="ribbon"><span>热门</span></div>
+            {{/if}}
+            <div class="mylabel" style="background-color:#{{labelBGColor}} !important; color:#{{labelColor}} !important;"><span class="flag-icon flag-icon-{{flagId}}"></span> {{keyword}}</div>
+            <div class="mytitle giveMeTwoLines">{{title}}</div>
+        </div>
+        <div class="card-content">
+            <div class="card-content-inner giveMeThreeLines">
+                {{summary}}
+            </div>
+        </div>
+        <div class="card-footer giveMeOneLines">
+            <a href="#" class="link">{{localTime}}</a>
+            <a href="#" class="link">{{numSources}}个新闻源：
+                {{#each sourceArticles}}
+                &nbsp;&nbsp;
+                <img src="http://www.google.com/s2/favicons?domain_url={{sourceLink}}" width="16" height="16" />
+                {{/each}}
+            </a>
+        </div>
+    </div>
+</script>
+
+<script id="card-pic-33-template" type="text/template7">
+    <div class="card card-pic-33" id="card{{id}}" data-id="{{id}}" style="display: none;" onclick="showDetails(this)">
+        <div style="background-image:url({{mainImage}})" valign="bottom" class="card-header color-white">
+            {{#if isHot}}
+            <div class="ribbon"><span>热门</span></div>
+            {{/if}}
+            <div class="mylabel" style="background-color:#{{labelBGColor}} !important; color:#{{labelColor}} !important;"><span class="flag-icon flag-icon-{{flagId}}"></span> {{keyword}}</div>
+            <div class="mytitle giveMeTwoLines">{{title}}</div>
+        </div>
+        <div class="card-footer giveMeOneLines">
+            <a href="#" class="link">{{localTime}}</a>
+            <a href="#" class="link">{{numSources}}个新闻源：
+                {{#each sourceArticles}}
+                &nbsp;&nbsp;
+                <img src="http://www.google.com/s2/favicons?domain_url={{sourceLink}}" width="16" height="16" />
+                {{/each}}
+            </a>
+        </div>
+    </div>
+</script>
+
+<script id="details-template" type="text/template7">
+    <div class="navbar">
+        <div data-page="detail-news" class="navbar-inner">
+            <div class="left sliding"><a href="#" class="back link" onclick="saveSettings();"><i class="fa fa-chevron-left"></i><span></span> 返回</a></div>
+            <div class="right sliding">
+                <a href="#" class="link icon-only"
+                   onclick="changeFont();"><i class="fa fa-font"></i></a>
+                <a href="#" class="link icon-only"
+                   onclick="shareToWechat({{id}})"><i class="fa fa-weixin"></i></a>
+                <a href="#" class="link icon-only"
+                   onclick="shareToOthers({{id}})"><i class="fa fa-share-square-o"></i></a>
+            </div>
+        </div>
+    </div>
+    <div data-page="detail-news" class="page">
+        <!-- Scrollable page content-->
+        <div class="page-content hide-navbar-on-scroll">
+            {{#if mainImage}}
+            <div class="title-image" style="background-image:url({{mainImage}})"></div>
+            {{/if}}
+            <div class="content-block-title multiline-big-space {{#if mainImage}} on-pic-background {{/if}}">
+                <div class="mylabel detail-page-label" style="background-color:#{{labelBGColor}} !important; color:#{{labelColor}} !important;"><span class="flag-icon flag-icon-{{flagId}}"></span> {{keyword}}</div>
+                {{#if isHot}}
+                <div class="mylabel detail-page-label" style="background-color:#{{labelBGColor}} !important; color:red !important;"><i class="fa fa-fire"></i> 热点</div>
+                {{/if}}
+                {{#if isStar}}
+                <div class="mylabel detail-page-label" style="background-color:#{{labelBGColor}} !important; color: #007aff !important;"><i class="fa fa-star"></i> 星标</div>
+                {{/if}}
+                <br>
+                {{title}}
+            </div>
+            <br><br>
+            <div class="content-block {{#if mainImage}} on-pic-background {{/if}}">
+                <div class="row left-align-row">
+                    发布时间：{{localTime}}
+                </div>
+                <div class="row left-align-row">
+                    新闻源：{{numSources}}个
+                    {{#each sourceArticles}}
+                    &nbsp;&nbsp;
+                    <img src="https://www.google.com/s2/favicons?domain_url={{sourceLink}}" width="16" height="16" />
+                    {{/each}}
+                </div>
+            </div>
+            {{#each sourceArticles}}
+
+            {{#if mainContent}}
+            <div class="row">
+                <div class="content-block inset">
+                    <div class="content-block-inner" style="font-size: 17px;">
+                        {{mainContent}}
+                    </div>
+                </div>
+            </div>
+            {{/if}}
+
+            <div class="row">
+                <div class="col-10">
+                </div>
+                <div class="col-80">
+                    <a href="#" class="button button-big" onclick="openClick('{{sourceLink}}')"> <img src="https://www.google.com/s2/favicons?domain_url={{sourceLink}}" width="16" height="16" /> 查看原文 </a>
+                </div>
+                <div class="col-10">
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</script>
+
+
+<script type="text/javascript" src="lib/js/swiper.min.js"></script>
+<script type="text/javascript" src="lib/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="lib/js/framework7.js"></script>
+<script type="text/javascript" src="lib/js/js.cookie.js"></script>
+<script type="text/javascript" src="lib/js/jsonselect.js"></script>
+<script type="text/javascript" src="lib/js/moment.js"></script>
+<script type="text/javascript" src="lib/js/inobounce.js"></script>
+
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/myapp.js"></script>
+<script type="text/javascript" src="js/data-selector.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
