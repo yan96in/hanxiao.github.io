@@ -71,12 +71,12 @@ function showDetails(param) {
         });
 
 
-        $("img").each(function () {
-            var image = $(this);
-            if (image.context.naturalWidth == 0 || image.readyState == 'uninitialized') {
-                $(image).unbind("error").hide();
-            }
-        });
+        //$("img").each(function () {
+        //    var image = $(this);
+        //    if (image.context.naturalWidth == 0 || image.readyState == 'uninitialized') {
+        //        $(image).unbind("error").hide();
+        //    }
+        //});
     } else {
         var updateNotif = myApp.addNotification({
             title: '无法找到该新闻！',
