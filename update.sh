@@ -7,6 +7,7 @@ cd /home/han/Documents/xiaode-backend/
 cp /home/han/Documents/xiaode-backend/*.json /home/han/Documents/hanxiao.github.io/data/
 cp /home/han/Documents/xiaode-backend/*.lz /home/han/Documents/hanxiao.github.io/data/
 cd /home/han/Documents/hanxiao.github.io/
+scp /home/han/Documents/xiaode-backend/thumbnail/*.jpg  xiaoh@lxhalle.informatik.tu-muenchen.de:/u/halle/xiaoh/home_page/html-data/thumbnail/
 /usr/bin/git add data/database*.json
 /usr/bin/git add data/keywords.json
 /usr/bin/git add data/*.lz
