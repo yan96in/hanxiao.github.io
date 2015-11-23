@@ -126,7 +126,7 @@ function selectStoryHasArticle(json) {
 }
 
 function selectAllStories(json) {
-    var query = ':has(:root > .title)';
+    var query = ':has(:root > .sourceArticles)';
     var re = jsel.match(query, json);
     //formatStoryImage(re);
     formatStoryTime(re);
