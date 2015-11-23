@@ -67,7 +67,7 @@ function showDetails(param) {
         var updateNotif = myApp.addNotification({
             title: randomTitles[randInt(randomTitles.length)],
             subtitle: '下载欧金所app，掌握的欧洲金融脉搏！<div class="download-btn-group"><img src="img/Download_on_the_App_Store_Badge_CN_135x40.svg" height="30px">&nbsp; &nbsp;<img src="img/zh-cn_generic_rgb_wo_60.png" height="30px"></div>',
-            media: '<img src="img/logo-invert.png" height="40px" style="border-radius: 8px;">'
+            media: '<img src="img/logo-invert-64x64.png" height="40px" style="border-radius: 8px;">'
         });
 
 
