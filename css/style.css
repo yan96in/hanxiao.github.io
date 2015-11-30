@@ -244,3 +244,13 @@ margin-top:40px;
 	font-size: 30px;
 	font-weight: 100;
 }
+
+
+
+hr.thin {
+	height: 1px;
+	border: 0;
+	color: #333;
+	background-color: #333;
+	width: 80%;
+}
