@@ -1,327 +1,175 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <title>欧金所 - 欧洲金融资讯门户</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
-    <title lang="zh">欧金所 - 欧洲金融新闻门户</title>
-    <!-- Path to Framework7 Library CSS-->
-    <link rel="stylesheet" href="lib/css/framework7.ios.min.css">
-    <link rel="stylesheet" href="lib/css/framework7.ios.colors.min.css">
-    <link rel="stylesheet" href="lib/css/animate.css">
-    <link rel="stylesheet" href="lib/css/flag-icon.css">
-    <link rel="stylesheet" href="lib/font-awesome-4.4.0/css/font-awesome.min.css">
+    <meta name="description" content="欧金所, 您的欧洲第一专业门户">
+    <meta name="author" content="Han Xiao">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="css/label.css">
-    <link rel="stylesheet" href="css/ribbons.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- Fav and touch icons -->
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+    <link rel="shortcut icon" href="img/logo.png">
+
+
 </head>
 <body>
-<div class="statusbar-overlay"></div>
-<div class="panel-overlay"></div>
-
-<div class="panel panel-left panel-reveal">
-    <div class="content-block">
-        <p>Left panel content goes here</p>
-    </div>
-</div>
-
-<div class="panel panel-right panel-cover">
-    <div class="content-block">
-        <p>Right panel content goes here</p>
-    </div>
-</div>
-
-<div class="views">
-
-    <div class="view view-left navbar-through layout-white">
-
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="center sliding animated flipInX"><img src="img/logo-64x64.png"></div>
+<!--HEADER ROW-->
+<div id="header-row">
+    <div class="container">
+        <div class="row">
+            <!--LOGO-->
+            <div class="span3"><div class="brand"><img src="img/logo.png" width="80px"/>&nbsp; 欧金所</div></div>
+            <!-- /LOGO -->
+            <div class="span3"></div>
+            <div class="span6">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- ojins-newhome-top -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5408889511302651"
+                     data-ad-slot="9526425925"
+                     data-ad-format="auto"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
-        </div>
-
-        <div class="pages">
-            <div data-page="index-left" class="page">
-                <div class="page-content">
-                    <div class="content-block">
-                        <a href="#" class="button" onclick="loadAllData(dataUrl);"><i class="fa fa-refresh"></i> 更新全部</a>
-                    </div>
-                    <div class="content-block-title">特别推荐</div>
-                    <div class="content-block">
-                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                        <!-- side-vertical -->
-                        <ins class="adsbygoogle"
-                             style="display:inline-block;width:199px;height:285px"
-                             data-ad-client="ca-pub-5408889511302651"
-                             data-ad-slot="2142554729"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </div>
-                    <div class="content-block-title">按国家查看</div>
-                    <div class="list-block accordion-list">
-                        <ul id="menuItem">
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="view view-main layout-white">
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="center sliding" id="title-mainpage"></div>
-            </div>
-        </div>
-        <div class="pages navbar-through">
-            <div data-page="home-page" class="page navbar-fixed toolbar-fixed">
-                <div class="page-content main-homepage" id="storyLine">
-                </div>
-            </div>
-        </div>
-        <div class="toolbar">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- menu -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-5408889511302651"
-                 data-ad-slot="3193812322"
-                 data-ad-format="auto"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
         </div>
     </div>
 </div>
+<!-- /HEADER ROW -->
 
 
 
-<script id="row-33-template" type="text/template7">
-    <div class="row no-gutter">
-        <div class="col-33">
-            {{story1}}
+
+<div class="container">
+    <!-- Feature
+      ==============================================-->
+
+    <div class="row feature-box">
+
+        <div class="span2"><img src="img/ojins-left-side.png" style="max-width: 15vw;"></div>
+        <div class="span1"></div>
+        <div class="span6 cnt-title">
+            <h1></h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span>连点成线，汇线成面</span>
         </div>
-        <div class="col-33">
-            {{story2}}
+        <div class="span1"></div>
+        <div class="span2"><img src="img/vzguru-rightside.png" style="max-width: 15vw;"></div>
+
+    </div>
+
+    <div class="hr-divider"></div>
+
+    <div class="row feature-box">
+
+
+
+        <div class="span4" style="margin-top: 50px">
+            <img src="img/ojins-120.png" class="my-icon">
+            <h2>欧金所资讯版</h2>
+            <p>
+                欧金所旨在为中国商业菁英和决策者们提供每日不可或缺的欧洲商业财经新闻、深度分析以及评论。
+                欧金所对欧洲二十国经济和全球商业具有影响力的重大事件全方位覆盖。揭示事件的来龙去脉，以
+                真正富有国际视野的权威报道为您提供“必读”的欧洲商业财经资讯网站。
+            </p>
+
+            <a class="btn btn-large btn-info" href="http://app.ojins.com">免费下载App</a>
+
         </div>
-        <div class="col-33">
-            {{story3}}
+
+        <div class="span4" style="margin-top: 50px">
+            <img src="img/vzguru-180.png" class="my-icon">
+            <h2>德国驾照小助手</h2>
+            <p>
+                德国驾照小助手帮您快速掌握德国交通标志，是您在德学车驾校理想伴侣。收录超过170个德国常用
+                交通标志 官方权威解释，注意事项，应急措施，罚金一应俱全。高清晰 SVG 矢量路标，为您提供
+                流畅操作体验。为留学生，在德华人设计的德、英、汉三语切换，语言不再是障碍。
+            </p>
+            <a class="btn btn-large btn-info" href="http://vzguru.ojins.com">免费下载App</a>
+        </div>
+
+        <div class="span4" style="margin-top: 50px">
+            <img src="img/phb-92.png" class="my-icon">
+            <h2>平衡宝</h2>
+            <p>
+                平衡宝是一套为您私人定制的股票自动优化算法。当您选择一组股票后，平衡宝根据明日的股票价格预
+                测，对您当前持有的股票配额进行优化。对于预计下跌的股票，平衡宝将减少持有量；对于预计上涨的
+                股票，则将增加持有量，从而达到最大化明日的期望收益的目标。
+            </p>
+            <a class="btn btn-large btn-info" href="http://ojins.com/phb">了解更多</a>
         </div>
     </div>
-</script>
 
-<script id="row-33-66-template" type="text/template7">
-    <div class="row no-gutter">
-        <div class="col-33">
-            {{story1}}
+    <div class="row feature-box">
+        <div class="span4">
         </div>
-        <div class="col-66">
-            {{story2}}
+        <div class="span4">
+            <img src="img/xiaode-80.png" class="my-icon">
+            <h2>晓得资讯引擎</h2>
+            <p>
+                实时采集多方资讯，文本图片智能分类去重，情感语义分析，格式化输出，推送到移动设备。晓得引擎为欧金所资讯App提供稳定的后台支持。
+            </p>
+
+            <a class="btn btn-large btn-info" href="http://ojins.com/xiaode">了解更多</a>
         </div>
+        <div class="span4">
+        </div>
+
     </div>
-</script>
+
+    <div class="hr-divider"></div>
+
+    <!-- Row View -->
 
 
-<script id="menu-template" type="text/template7">
-    {{#each items}}
-    <li class="accordion-item"><a href="#" class="item-content item-link" onclick="selectFlag(this)" data-flag="{{flagName}}">
-        <div class="item-inner">
-            <div class="item-title"><span class="flag-icon flag-icon-{{flagId}}"></span>  {{flagName}}</div>
-            {{#if hasUpdate}}<div class="item-after"><span class="badge bg-red">{{numNew}}</span></div>{{/if}}
-        </div></a>
-        <div class="accordion-item-content">
-            <div class="content-block">
-                <div class="list-block">
-                    <ul>
-                        {{#each stories}}
-                        <li class="item-content">
-                            <div class="item-inner small-menu-item">
-                                <div class="item-title">{{title}}</div>
-                                <div class="item-after">{{localTime}}</div>
-                            </div>
-                        </li>
-                        {{/each}}
-                    </ul>
-                </div>
-            </div>
+    <div class="row">
+        <div class="span4"></div>
+        <div class="span7">
+            <h1><img src="img/email-icon.png" width="80px">&nbsp;<a href="mailto:artex.xh@gmail.com">联系我们</a></h1>
         </div>
-    </li>
-    {{/each}}
-</script>
-
-<script id="row-66-33-template" type="text/template7">
-    <div class="row no-gutter">
-        <div class="col-66">
-            {{story1}}
-        </div>
-        <div class="col-33">
-            {{story2}}
-        </div>
+        <div class="span1"></div>
     </div>
-</script>
 
-<script id="card-pic-66-template" type="text/template7">
-    <div class="card card-pic-66" id="card{{id}}" data-id="{{id}}" style="display: none;" onclick="showDetails(this)">
-        <div style="background-image:url({{mainImage}})" valign="bottom" class="card-header color-white">
-            {{#if isHot}}
-            <div class="ribbon"><span>热门</span></div>
-            {{/if}}
-            <div class="mylabel" style="background-color:#{{labelBGColor}} !important; color:#{{labelColor}} !important;"><span class="flag-icon flag-icon-{{flagId}}"></span> {{keyword}}</div>
-            <div class="mytitle giveMeTwoLines">{{title}}</div>
-        </div>
-        <div class="card-content">
-            <div class="card-content-inner giveMeThreeLines">
-                <p>{{summary}}</p>
-            </div>
-        </div>
-        <div class="card-footer giveMeOneLines">
-            <a href="#" class="link">{{localTime}}</a>
-            <a href="#" class="link">{{numSources}}个新闻源：
-                {{#each sourceArticles}}
-                &nbsp;&nbsp;
-                <img src="http://www.google.com/s2/favicons?domain_url={{sourceLink}}" width="16" height="16" />
-                {{/each}}
-            </a>
-        </div>
-    </div>
-</script>
+</div>
 
-<script id="card-text-33-template" type="text/template7">
-    <div class="card card-text-33" id="card{{id}}" data-id="{{id}}" onclick="showDetails(this)">
-        <div class="card-header">
-            {{#if isHot}}
-            <div class="ribbon"><span>热门</span></div>
-            {{/if}}
-            <div class="mylabel" style="background-color:#{{labelBGColor}} !important; color:#{{labelColor}} !important;"><span class="flag-icon flag-icon-{{flagId}}"></span> {{keyword}}</div>
-            <div class="mytitle giveMeTwoLines">{{title}}</div>
-        </div>
-        <div class="card-content">
-            <div class="card-content-inner giveMeThreeLines">
-                {{summary}}
-            </div>
-        </div>
-        <div class="card-footer giveMeOneLines">
-            <a href="#" class="link">{{localTime}}</a>
-            <a href="#" class="link">{{numSources}}个新闻源：
-                {{#each sourceArticles}}
-                &nbsp;&nbsp;
-                <img src="http://www.google.com/s2/favicons?domain_url={{sourceLink}}" width="16" height="16" />
-                {{/each}}
-            </a>
-        </div>
-    </div>
-</script>
 
-<script id="card-pic-33-template" type="text/template7">
-    <div class="card card-pic-33" id="card{{id}}" data-id="{{id}}" style="display: none;" onclick="showDetails(this)">
-        <div style="background-image:url({{mainImage}})" valign="bottom" class="card-header color-white">
-            {{#if isHot}}
-            <div class="ribbon"><span>热门</span></div>
-            {{/if}}
-            <div class="mylabel" style="background-color:#{{labelBGColor}} !important; color:#{{labelColor}} !important;"><span class="flag-icon flag-icon-{{flagId}}"></span> {{keyword}}</div>
-            <div class="mytitle giveMeTwoLines">{{title}}</div>
-        </div>
-        <div class="card-footer giveMeOneLines">
-            <a href="#" class="link">{{localTime}}</a>
-            <a href="#" class="link">{{numSources}}个新闻源：
-                {{#each sourceArticles}}
-                &nbsp;&nbsp;
-                <img src="http://www.google.com/s2/favicons?domain_url={{sourceLink}}" width="16" height="16" />
-                {{/each}}
-            </a>
-        </div>
-    </div>
-</script>
+<!-- /.Row View -->
 
-<script id="details-template" type="text/template7">
-    <div class="navbar">
-        <div data-page="detail-news" class="navbar-inner">
-            <div class="left sliding"><a href="#" class="back link" onclick="saveSettings();"><i class="fa fa-chevron-left"></i><span></span> 返回</a></div>
-            <div class="right sliding">
-                <a href="#" class="link icon-only"
-                   onclick="changeFont();"><i class="fa fa-font"></i></a>
-                <a href="#" class="link icon-only"
-                   onclick="shareToWechat({{id}})"><i class="fa fa-weixin"></i></a>
-                <a href="#" class="link icon-only"
-                   onclick="shareToOthers({{id}})"><i class="fa fa-share-square-o"></i></a>
+
+
+<!--Footer
+==========================-->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="span6">欧金所 2015 版权所有  <br>
+                <small>欧金所, 您的欧洲第一专业门户</small>
             </div>
         </div>
     </div>
-    <div data-page="detail-news" class="page">
-        <!-- Scrollable page content-->
-        <div class="page-content hide-navbar-on-scroll">
-            {{#if mainImage}}
-            <div class="title-image" style="background-image:url({{mainImage}})"></div>
-            {{/if}}
-            <div class="content-block-title multiline-big-space {{#if mainImage}} on-pic-background {{/if}}">
-                <div class="mylabel detail-page-label" style="background-color:#{{labelBGColor}} !important; color:#{{labelColor}} !important;"><span class="flag-icon flag-icon-{{flagId}}"></span> {{keyword}}</div>
-                {{#if isHot}}
-                <div class="mylabel detail-page-label" style="background-color:#{{labelBGColor}} !important; color:red !important;"><i class="fa fa-fire"></i> 热点</div>
-                {{/if}}
-                {{#if isStar}}
-                <div class="mylabel detail-page-label" style="background-color:#{{labelBGColor}} !important; color: #007aff !important;"><i class="fa fa-star"></i> 星标</div>
-                {{/if}}
-                <br>
-                {{title}}
-            </div>
-            <br><br>
-            <div class="content-block {{#if mainImage}} on-pic-background {{/if}}">
-                <div class="row left-align-row">
-                    发布时间：{{localTime}}
-                </div>
-                <div class="row left-align-row">
-                    新闻源：{{numSources}}个
-                    {{#each sourceArticles}}
-                    &nbsp;&nbsp;
-                    <img src="https://www.google.com/s2/favicons?domain_url={{sourceLink}}" width="16" height="16" />
-                    {{/each}}
-                </div>
-            </div>
-            {{#each sourceArticles}}
+</footer>
 
-            {{#if mainContent}}
-            <div class="row">
-                <div class="content-block inset">
-                    <div class="content-block-inner" style="font-size: 17px;">
-                        {{mainContent}}
-                    </div>
-                </div>
-            </div>
-            {{/if}}
+<!--/.Footer-->
 
-            <div class="row">
-                <div class="col-10">
-                </div>
-                <div class="col-80">
-                    <a href="#" class="button button-big" onclick="openClick('{{sourceLink}}')"> <img src="https://www.google.com/s2/favicons?domain_url={{sourceLink}}" width="16" height="16" /> 查看原文 </a>
-                </div>
-                <div class="col-10">
-                </div>
-            </div>
-            {{/each}}
-        </div>
-    </div>
-</script>
-
-
-<script type="text/javascript" src="lib/js/swiper.min.js"></script>
-<script type="text/javascript" src="lib/js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="lib/js/framework7.js"></script>
-<script type="text/javascript" src="lib/js/js.cookie.js"></script>
-<script type="text/javascript" src="lib/js/jsonselect.js"></script>
-<script type="text/javascript" src="lib/js/moment.js"></script>
-<script type="text/javascript" src="lib/js/inobounce.js"></script>
-
-<script type="text/javascript" src="js/utils.js"></script>
-<script type="text/javascript" src="js/myapp.js"></script>
-<script type="text/javascript" src="js/data-selector.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
