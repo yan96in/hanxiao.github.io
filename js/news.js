@@ -64,6 +64,7 @@ function showDetails(param) {
     var re = jsel.match(query, allStories);
     if (re.length > 0) {
         mainView.router.loadContent(detailtemplate(re[0]));
+        document.title = '[欧金所] ' + re[0].title;
         var updateNotif = myApp.addNotification({
             title: randomTitles[randInt(randomTitles.length)],
             subtitle: '<a href="http://app.ojins.com" onclick=openClick("http://app.ojins.com")>下载欧金所app，掌握的欧洲金融脉搏！<div class="download-btn-group"><img src="img/Download_on_the_App_Store_Badge_CN_135x40.svg" height="30px">&nbsp; &nbsp;<img src="img/zh-cn_generic_rgb_wo_60.png" height="30px"></div></a> ',
