@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <!-- Fav and touch icons -->
+    <link rel="icon" type="image/png" href="img/logo-64x64.png"/>
+    <link rel="shortcut icon" href="img/logo-64x64.png">
     <title lang="zh">欧金所 - 欧洲金融新闻门户</title>
     <!-- Path to Framework7 Library CSS-->
     <link rel="stylesheet" href="lib/css/framework7.ios.min.css">
@@ -58,7 +60,14 @@
         <!-- Scrollable page content-->
         <div class="page-content">
             {{#if mainImage}}
+            <div style='display:none;'>
+                <img src={{mainImage}} />
+            </div>
             <div class="title-image" style="background-image:url({{mainImage}})"></div>
+            {{else}}
+            <div style='display:none;'>
+                <img src='img/small.png' />
+            </div>
             {{/if}}
             <div class="content-block-title multiline-big-space {{#if mainImage}} on-pic-background {{/if}}">
                 <div class="mylabel detail-page-label" style="background-color:#{{labelBGColor}} !important; color:#{{labelColor}} !important;"><span class="flag-icon flag-icon-{{flagId}}"></span> {{keyword}}</div>
