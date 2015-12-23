@@ -54,7 +54,7 @@ var lastOpenTime;
 moment.locale('zh-cn');
 
 var detailtemplate = Template7.compile($$('#details-template').html());
-var dataUrl = 'data/database-' + Math.abs(QueryString.id % 10) + '.json.lz';
+var dataUrl = 'data/database-' + Math.abs(QueryString.id % 50) + '.json.lz';
 //var dataUrl = 'http://cdn.rawgit.com/hanxiao/xiaode-backend/master/database.json';
 
 console.log(QueryString.id);

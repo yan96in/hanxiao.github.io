@@ -63,3 +63,7 @@ img[src='Error.src']{
     display: none;
 }
 
+.page-content {
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+}
