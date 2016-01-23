@@ -1,157 +1,254 @@
-<!DOCTYPE html>
-<html lang="zh">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8">
-    <title>欧金所 - 欧洲金融资讯门户</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="description" content="欧金所, 您的欧洲第一专业门户">
-    <meta name="author" content="Han Xiao">
-    <!-- Bootstrap -->
-    <link href="lib/css/framework7.ios.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>欧金所 - 欧洲资讯门户</title>
+	<meta name="description" content="欧金所, 您的欧洲第一专业门户">
+	<meta name="author" content="Han Xiao">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="lib/css/framework7.ios.min.css">
-
-    <!-- Fav and touch icons -->
-    <link rel="icon" type="image/png" href="img/logo-64x64.png"/>
-    <link rel="shortcut icon" href="img/logo-64x64.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<!-- Fav and touch icons -->
+	<link rel="icon" type="image/png" href="img/logo-64x64.png"/>
+	<link rel="shortcut icon" href="img/logo-64x64.png">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 
 
 </head>
 
+
 <body>
-<!-- Status bar overlay for full screen mode (PhoneGap) -->
-<div class="statusbar-overlay"></div>
-<!-- Views -->
-<div class="views">
-    <!-- Your main view, should have "view-main" class -->
-    <div class="view view-main">
-        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-        <div class="pages">
-            <!-- Page, "data-page" contains page name -->
-            <div data-page="index" class="page">
-                <!-- Scrollable page content -->
-                <div class="page-content">
-                    <div id="header-row">
-                        <div class="content-block">
-                            <div class="row">
-                                <!--LOGO-->
-                                <div class="col-20"></div>
-                                <div class="col-60"><div class="brand"><img src="img/logo.png" width="80px" style="vertical-align: middle"/>&nbsp; 欧金所</div></div>
-                                <div class="col-20"></div>
-                            </div>
-                        </div>
-                    </div>
+<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 ">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar">
+						<span class="glyphicon glyphicon-align-justify"></span>
+					</button>
+					<a class="navbar-brand logo" href="#"><img src="img/ojins-120.png" alt="欧金所" height="100%" style="vertical-align: middle; display: inline;"/> 欧金所</a>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<nav class="collapse navbar-collapse" id="myNavbar" role="navigation">
+					<ul class="nav navbar-nav navbar-right menu">
+						<li><a href="#section2" class="page-scroll">产品</a></li>
+						<li><a href="#contact" class="page-scroll">联系</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
 
-                    <div class="content-block">
-                        <!-- Feature
-                          ==============================================-->
-
-                        <div class="row">
-                            <div class="col-33 cnt-title"><img src="img/ojins-left-side.png" style="max-width: 15vw;"></div>
-                            <div class="col-33 cnt-title">
-                                <br><br><br><br><br><br><br>
-                                <span>连点成线，汇线成面</span>
-                            </div>
-                            <div class="col-33 cnt-title"><img src="img/vzguru-rightside.png" style="max-width: 15vw;"></div>
-                        </div>
-
-                    </div>
-
-                    <hr class="thin">
-
-                    <div class="content-block">
-
-                        <div class="row feature-box">
-
-                            <div class="col-33" style="margin-top: 50px">
-                                <img src="img/ojins-120.png" class="my-icon">
-                                <h2>欧金所资讯版</h2>
-                                <p>
-                                    欧金所旨在为中国商业菁英和决策者们提供每日不可或缺的欧洲商业财经新闻、深度分析以及评论。
-                                    欧金所对欧洲二十国经济和全球商业具有影响力的重大事件全方位覆盖。揭示事件的来龙去脉，以
-                                    真正富有国际视野的权威报道为您提供“必读”的欧洲商业财经资讯网站。
-                                </p>
-
-                                <a class="button button-round active" href="http://app.ojins.com">免费下载App</a>
-
-                            </div>
-
-                            <div class="col-33" style="margin-top: 50px">
-                                <img src="img/vzguru-180.png" class="my-icon">
-                                <h2>德国驾照小助手</h2>
-                                <p>
-                                    德国驾照小助手帮您快速掌握德国交通标志，是您在德学车驾校理想伴侣。收录超过170个德国常用
-                                    交通标志 官方权威解释，注意事项，应急措施，罚金一应俱全。高清晰 SVG 矢量路标，为您提供
-                                    流畅操作体验。为留学生，在德华人设计的德、英、汉三语切换，语言不再是障碍。
-                                </p>
-                                <a class="button button-round active" href="http://vzguru.ojins.com">免费下载App</a>
-                            </div>
-
-                            <div class="col-33" style="margin-top: 50px">
-                                <img src="img/phb-92.png" class="my-icon">
-                                <h2>平衡宝</h2>
-                                <p>
-                                    平衡宝是一套为您私人定制的股票自动优化算法。当您选择一组股票后，平衡宝根据明日的股票价格预
-                                    测，对您当前持有的股票配额进行优化。对于预计下跌的股票，平衡宝将减少持有量；对于预计上涨的
-                                    股票，则将增加持有量，从而达到最大化明日的期望收益的目标。
-                                </p>
-                                <a class="button button-round active" href="http://ojins.com/phb">了解更多</a>
-                            </div>
-                        </div>
-
-                        <div class="row feature-box">
-                            <div class="col-33">
-                            </div>
-                            <div class="col-33">
-                                <img src="img/xiaode-80.png" class="my-icon">
-                                <h2>晓得资讯引擎</h2>
-                                <p>
-                                    实时采集多方资讯，文本图片智能分类去重，情感语义分析，格式化输出，推送到移动设备。晓得引擎为欧金所资讯App提供稳定的后台支持。
-                                </p>
-
-                                <a class="button button-round active" href="http://ojins.com/xiaode">了解更多</a>
-                            </div>
-                            <div class="col-33">
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <hr class="thin">
-
-                    <div class="content-block">
-
-                        <!-- Row View -->
-
-                        <div class="row">
-                            <div class="span4"></div>
-                            <div class="span7">
-                                <h1><img src="img/email-icon.png" width="80px" style="vertical-align: middle">&nbsp;<a href="mailto:artex.xh@gmail.com">联系我们</a></h1>
-                            </div>
-                            <div class="span1"></div>
-                        </div>
-
-                    </div>
-
-                    <div class="container-block">
-                        <footer>
-                            <div class="row">
-                                <div class="col-20"></div>
-                                <div class="col-30">欧金所 2015 版权所有 </div>
-                                <div class="col-30">您的欧洲第一专业门户</div>
-                                <div class="col-20"></div>
-                            </div>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
+<div class="container-fluid main" id="page-top">
+	<div class="row">
+		<div class="col-md-12 backg">
+			<div class="col-md-4 col-md-offset-4 inner col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+				<div class="text-box">
+					<p class="intro"><img src="img/logo.png" style="width: 80px"></p>
+					<h2>欧金所</h2>
+					<h3>新思维，新技术，新生活</h3>
+					<br><br>
+					<p><a href="#" class="link-button">了解更多</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 some-notes">
+			<div class="title">
+				<h2>您的欧洲资讯门户</h2>
+			</div>
+			<div class="desc">
+				<p>我们认真用新思维和新技术为在欧洲生活的华人提供便利。</p>
+			</div>
+		</div>
+	</div>
 </div>
+
+<div class="container-fluid features" id="section2">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="text-center features-text">我们的产品</h2>
+				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
+					<div class="col-md-2 col-sm-2 col-xs-12">
+						<div class="iconing">
+							<img src="img/ojins-120.png" class="my-icon">
+						</div>
+					</div>
+					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
+						<h4>欧金所资讯版</h4>
+						<p>欧金所手机版旨在为中国商业菁英和决策者们提供每日不可或缺的欧洲商业财经新闻、深度分析以及评论。
+							以富有国际视野的权威报道为您提供“必读”的欧洲商业财经资讯网站。</p>
+						<h5><a href="http://app.ojins.com/">> 掌握欧洲脉搏</a></h5>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
+					<div class="col-md-2 col-sm-2 col-xs-12">
+						<div class="iconing">
+							<img src="img/vzguru-180.png" class="my-icon">
+						</div>
+					</div>
+					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
+						<h4>德国驾照小助手</h4>
+						<p>德国驾照小助手帮您快速掌握德国交通标志，是您在德学车驾校理想伴侣。收录超过170个德国常用
+							交通标志，官方权威解释，注意事项，应急措施，罚金一应俱全。英、汉三语切换，语言不再是障碍。</p>
+						<h5><a href="http://vzguru.ojins.com/">> 学习德国交规</a></h5>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
+					<div class="col-md-2 col-sm-2 col-xs-12">
+						<div class="iconing">
+							<img src="img/phb-92.png" class="my-icon">
+						</div>
+					</div>
+					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
+						<h4>平衡宝</h4>
+						<p>
+							平衡宝是一套为您私人定制的股票自动优化算法。当您选择一组股票后，平衡宝根据明日的股票价格预
+							测，对您当前持有的股票配额进行优化。
+						</p>
+						<h5><a href="http://ojins.com/phb">> 我要稳定投资</a></h5>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
+					<div class="col-md-2 col-sm-2 col-xs-12">
+						<div class="iconing">
+							<img src="img/phd.png" class="my-icon">
+						</div>
+					</div>
+					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
+						<h4>德国博士咨询</h4>
+						<p>一对一的为德国博士申请者提供最耐心最详细的解答，提供申请流程介绍及分析，
+							职位信息介绍，简历优化，自荐信优化，推荐信优化等多种服务。</p>
+						<h5><a href="http://phd.ojins.com/">> 我有问题咨询</a></h5>
+					</div>
+
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
+					<div class="col-md-2 col-sm-2 col-xs-12">
+						<div class="iconing">
+							<img src="img/ojins-shop.png" class="my-icon">
+						</div>
+					</div>
+					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
+						<h4>欧洲省钱攻略</h4>
+						<p>
+							欧洲省钱攻略为中国大陆的消费者提供优质实惠的日化生活用品代购。在淘宝微信中为您提供优质的服务。
+						</p>
+						<h5><a href="https://shop120638680.world.taobao.com/">> 开始优质海淘</a></h5>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
+					<div class="col-md-2 col-sm-2 col-xs-12">
+						<div class="iconing">
+							<img src="img/ticprize2.jpg" class="my-icon">
+						</div>
+					</div>
+					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
+						<h4>北大附中T客奖学金</h4>
+						<p>T客奖于2013年在北大附中成立。该项奖是鼓励校园内的科技创新和跨学科实践。
+							第二届T客奖继承第一届的的设立初衷，活动流程增加了设计方案众酬，
+							方案实施和大众投票三个环节，让学生在体验一个技术创意想法实现的过程。</p>
+						<h5><a href="http://211.68.74.252/tic/index.html">> 往届获奖者</a></h5>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12 icon-box">
+					<div class="col-md-2 col-sm-2 col-xs-12">
+						<div class="iconing">
+							<img src="img/xiaode-80.png" class="my-icon">
+						</div>
+					</div>
+					<div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-12 icon-text-box">
+						<h4>晓得资讯引擎</h4>
+						<p>
+							实时采集多方资讯，文本图片智能分类去重，情感语义分析，格式化输出，推送到移动设备。晓得引擎为欧金所资讯App提供稳定的后台支持。
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container-fluid notes" id="contact">
+	<div class="row">
+		<div class="col-md-12 col-sm-12 col-xs-12 notes-bg">
+			<div class="container">
+				<div class="col-md-8 col-sm-8 col-xs-12">
+					<p>我们从未停止，因为好戏尚未开始。</p>
+				</div>
+				<div class="col-md-offset-1 col-md-2 col-md-offset-1 col-sm-offset-1 col-sm-2 col-sm-offset-1 col-xs-12">
+					<a href="mailto:contact@ojins.com"> <button type="button" class="btn btn-default btneff" >联系我们</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container-fluid footer">
+	<div class="row">
+		<div class="col-md-12">
+			<p>版权所有 &copy; 2014 - 2016 <a href="http://ojins.com">欧金所</a> | 用心打造，来自德国柏林</p>
+		</div>
+	</div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="lib/js/jquery-2.1.4.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$(document).on("scroll", onScroll);
+
+		$('a[href^="#"]').on('click', function (e) {
+			e.preventDefault();
+			$(document).off("scroll");
+
+			$('a').each(function () {
+				$(this).removeClass('active');
+			})
+			$(this).addClass('active');
+
+			var target = this.hash;
+			$target = $(target);
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top
+			}, 500, 'swing', function () {
+				window.location.hash = target;
+				$(document).on("scroll", onScroll);
+			});
+		});
+	});
+
+	function onScroll(event){
+		var scrollPosition = $(document).scrollTop();
+		$('nav a').each(function () {
+			var currentLink = $(this);
+			var refElement = $(currentLink.attr("href"));
+			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+				$('nav ul li a').removeClass("active");
+				currentLink.addClass("active");
+			}
+			else{
+				currentLink.removeClass("active");
+			}
+		});
+	}
+</script>
 
 </body>
 </html>
