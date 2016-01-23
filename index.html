@@ -215,9 +215,9 @@
 	function randInt(bound) {
 		return Math.floor(Math.random() * bound);
 	}
-	
+
 	$(document).ready(function () {
-		$('.backg').css('background-image', 'url(img/bg-' + (randInt(6)+1) + '.jpg)');
+		$('.backg').css('background-image', 'url(img/bg-' + (randInt(8)+1) + '.jpg)');
 		$(document).on("scroll", onScroll);
 
 		$('a[href^="#"]').on('click', function (e) {
