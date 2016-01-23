@@ -53,7 +53,7 @@
 }
 .backg
 {
-	background-attachment:fixed;
+	/*background-attachment:fixed;*/
 	background-color: #645862;
 	background-image:  url("img/bg.png");
 	background-position: bottom center;
@@ -261,7 +261,7 @@ h2.features-text::after {
 }
 .notes
 {
-	background-attachment:fixed;
+	/*background-attachment:fixed;*/
 	background-color: #645862;
 	background-image:  url("img/notes-bg.jpg");
 	background-position: top center;
