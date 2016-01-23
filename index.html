@@ -212,7 +212,12 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
 <script type="text/javascript">
+	function randInt(bound) {
+		return Math.floor(Math.random() * bound);
+	}
+	
 	$(document).ready(function () {
+		$('.backg').css('background-image', 'url(img/bg-' + (randInt(6)+1) + '.jpg)');
 		$(document).on("scroll", onScroll);
 
 		$('a[href^="#"]').on('click', function (e) {
@@ -221,7 +226,7 @@
 
 			$('a').each(function () {
 				$(this).removeClass('active');
-			})
+			});
 			$(this).addClass('active');
 
 			var target = this.hash;
